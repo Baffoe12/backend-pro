@@ -13,8 +13,8 @@ const PORT = process.env.PORT || 3000;
 // Enable CORS for all routes
 const allowedOrigins = [
   process.env.RENDER_EXTERNAL_URL,
-  'https://safedrive-dashboard.onrender.com',
-  'https://safedrive-pro.onrender.com' // Add your actual Render URL
+  'https://safedrive-backend-4h5k.onrender.com',
+   // Add your actual Render URL
 ];
 
 app.use(cors({
@@ -61,7 +61,7 @@ if (process.env.NODE_ENV === 'production' && process.env.DATABASE_URL) {
   console.log('Using SQLite database');
   sequelize = new Sequelize({
     dialect: 'sqlite',
-    storage: './database.sqlite',
+    storage: './dev.sqlite3',
     logging: false
   });
 }
