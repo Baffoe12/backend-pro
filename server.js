@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 3000;
 const allowedOrigins = [
   process.env.RENDER_EXTERNAL_URL,
   'https://safedrive-backend-4h5k.onrender.com',
-   // Add your actual Render URL
+  'https://safedrive-pro.netlify.app'  // Added frontend domain to allowed origins
 ];
 
 app.use(cors({
