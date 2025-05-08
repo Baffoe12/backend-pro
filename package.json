@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "build": "echo 'No build step required'",
-    "test": "jest",
-    "postinstall": "npm rebuild sqlite3"
-  },
+"start": "node server.js",
+"build": "echo 'No build step required'",
+"test": "jest"
+},
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
